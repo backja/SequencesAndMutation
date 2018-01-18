@@ -143,6 +143,15 @@ def MUTATE_delete_negatives(numbers):
     #       then ask for help as needed.
     # HINT #2: Why might it be wise to start at the end and
     #       work backwards through the list to the beginning?
+    #-------------------------------------------------------------------
+    index = []
+    for k in range(len(numbers)):
+        if numbers[k] < 0:
+            index = index + [k]
+    x=0
+    for k in range(len(index)):
+        del numbers[index[k]-x]
+        x = x + 1
 
 # ----------------------------------------------------------------------
 # If this module is running at the top level (as opposed to being
