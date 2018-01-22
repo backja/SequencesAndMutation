@@ -148,7 +148,7 @@ def MUTATE_delete_negatives(numbers):
     for k in range(len(numbers)):
         if numbers[k] < 0:
             index = index + [k]
-    x=0
+    x = 0
     for k in range(len(index)):
         del numbers[index[k]-x]
         x = x + 1
